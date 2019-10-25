@@ -116,6 +116,7 @@ class TicTacToe
     if won?
       winner_combo = won?
     end
+<<<<<<< HEAD
     
     if won? && @board[winner_combo[0]] == "X"
       return "X"
@@ -129,6 +130,21 @@ class TicTacToe
     turn
     end
     
+=======
+    
+    if won? && @board[winner_combo[0]] == "X"
+      return "X"
+    elsif won? && @board[winner_combo[0]] == "O"
+      return "O"
+    end
+  end
+  
+  def play
+    until over?
+    turn
+    end
+    
+>>>>>>> 6c68c5e97a182b3da40b6ec05b8a0ed068502030
     if over? && won?
       if winner == "X"
         puts "Congratulations X!"
@@ -136,9 +152,13 @@ class TicTacToe
         puts "Congratulations O!"
       end
     elsif over? && draw?
+<<<<<<< HEAD
       puts "Cat's Game!"
     end
   end
+=======
+      puts ""
+>>>>>>> 6c68c5e97a182b3da40b6ec05b8a0ed068502030
       
   
   
